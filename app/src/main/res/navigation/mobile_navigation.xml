@@ -17,10 +17,10 @@
         tools:layout="@layout/fragment_equipos" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.normapp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_ping"
+        android:name="com.normapp.ui.ping.PingFragment"
+        android:label="@string/title_ping"
+        tools:layout="@layout/fragment_ping" />
     <fragment
         android:id="@+id/navigation_info"
         android:name="com.normapp.ui.info.InfoFragment"

@@ -12,7 +12,7 @@
         android:title="@string/title_equipos" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_ping"
         android:icon="@drawable/ic_wifi_black_24dp"
         android:title="@string/title_ping" />
     <item

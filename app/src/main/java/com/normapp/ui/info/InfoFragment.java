@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.normapp.databinding.FragmentNotificationsBinding;
+import com.normapp.databinding.FragmentInfoBinding;
 
 public class InfoFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentInfoBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         InfoViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(InfoViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentInfoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
+        final TextView textView = binding.textInfo;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
