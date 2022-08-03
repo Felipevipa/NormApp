@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.317" />
+        <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.317" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/layout/activity_main.xml" value="0.26975683890577506" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.26975683890577506" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/layout/fragment_home.xml" value="0.26975683890577506" />
