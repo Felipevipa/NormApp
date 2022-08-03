@@ -11,6 +11,9 @@
         android:theme="@style/Theme.NormApp">
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
