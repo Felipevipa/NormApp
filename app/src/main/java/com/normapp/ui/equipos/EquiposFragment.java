@@ -1,4 +1,4 @@
-package com.normapp.ui.dashboard;
+package com.normapp.ui.equipos;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.normapp.databinding.FragmentDashboardBinding;
+import com.normapp.databinding.FragmentEquiposBinding;
 
-public class DashboardFragment extends Fragment {
+public class EquiposFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentEquiposBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        EquiposViewModel equiposViewModel =
+                new ViewModelProvider(this).get(EquiposViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentEquiposBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textEquipos;
+        equiposViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

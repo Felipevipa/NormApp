@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/navigation_normativas"
         android:name="com.normapp.ui.normativas.NormativasFragment"
-        android:label="@string/title_normativas"></fragment>
+        android:label="@string/title_normativas" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.normapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_equipos"
+        android:name="com.normapp.ui.equipos.EquiposFragment"
+        android:label="@string/title_equipos"
+        tools:layout="@layout/fragment_equipos" />
 
     <fragment
         android:id="@+id/navigation_notifications"
