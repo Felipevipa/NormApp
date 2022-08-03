@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">NormApp</string>
+    <string name="title_normativas">Normativas</string>
+    <string name="title_equipos">Equipos</string>
+    <string name="title_ping">Ping</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>

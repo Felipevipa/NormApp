@@ -4,17 +4,17 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_book_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_normativas" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_tools_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_equipos" />
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_wifi_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_ping" />
     <item
         android:id="@+id/navigation_info"
         android:icon="@drawable/ic_info_black_24dp"
