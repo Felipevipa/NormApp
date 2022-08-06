@@ -9,6 +9,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondobn"
     tools:context=".Inicio">
 
     <Button
@@ -16,11 +17,14 @@
         android:layout_width="357dp"
         android:layout_height="70dp"
         android:layout_marginTop="32dp"
+        android:background="@drawable/boton_menu"
         android:onClick="navigate"
         android:text="Normativas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:textSize="25dp"
+        />
 
     <Button
         android:id="@+id/button6"
@@ -28,10 +32,12 @@
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
         android:onClick="navigate"
+        android:background="@drawable/boton_menu"
         android:text="Ping"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        android:textSize="25dp"/>
 
     <Button
         android:id="@+id/button7"
@@ -39,10 +45,12 @@
         android:layout_height="70dp"
         android:layout_marginTop="8dp"
         android:onClick="navigate"
+        android:background="@drawable/boton_menu"
         android:text="Ayuda y Soporte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        android:textSize="25dp"/>
 
     <Button
         android:id="@+id/button5"
@@ -51,9 +59,11 @@
         android:layout_marginTop="8dp"
         android:onClick="navigate"
         android:text="Equipos"
+        android:background="@drawable/boton_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:textSize="25dp"/>
 
     <ImageView
         android:id="@+id/imageView"
