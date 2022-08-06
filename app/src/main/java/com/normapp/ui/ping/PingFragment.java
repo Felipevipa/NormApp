@@ -24,8 +24,8 @@ public class PingFragment extends Fragment {
         binding = FragmentPingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPing;
-        pingViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        // final TextView textView = binding.textPing;
+        // pingViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

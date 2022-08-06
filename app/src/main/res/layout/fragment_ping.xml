@@ -6,17 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".ui.ping.PingFragment">
 
-    <TextView
-        android:id="@+id/text_ping"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="134dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="173dp"
+                android:layout_height="173dp"
+                android:src="@drawable/ic_wifi_black_24dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_ping" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="221dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="IP 192.169.0.12" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="221dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="Time: 85.4ms" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="221dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="7 paquetes enviados" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="221dp"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="7 paquetes recibidos" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
