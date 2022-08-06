@@ -36,6 +36,7 @@
                 android:layout_width="221dp"
                 android:layout_height="43dp"
                 android:gravity="center"
+                android:textColor="#000"
                 android:text="IP 192.169.0.12" />
 
             <TextView
@@ -43,6 +44,7 @@
                 android:layout_width="221dp"
                 android:layout_height="43dp"
                 android:gravity="center"
+                android:textColor="#000"
                 android:text="Time: 85.4ms" />
 
             <TextView
@@ -50,6 +52,7 @@
                 android:layout_width="221dp"
                 android:layout_height="43dp"
                 android:gravity="center"
+                android:textColor="#000"
                 android:text="7 paquetes enviados" />
 
             <TextView
@@ -57,6 +60,7 @@
                 android:layout_width="221dp"
                 android:layout_height="43dp"
                 android:gravity="center"
+                android:textColor="#000"
                 android:text="7 paquetes recibidos" />
 
         </LinearLayout>
