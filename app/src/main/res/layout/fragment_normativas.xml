@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:background="@drawable/boton_normativa"
-                android:drawableLeft="@drawable/ieee"
+                android:drawableLeft="@drawable/itu"
                 android:text="Próximamente..."
                 android:textColor="@color/black"
                 app:backgroundTint="#FFDAD9D9" />
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:background="@drawable/boton_normativa"
-                android:drawableLeft="@drawable/ieee"
+                android:drawableLeft="@drawable/itu"
                 android:text="Proximamente..."
                 app:backgroundTint="#FF9E9C9C" />
 
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:background="@drawable/boton_normativa"
-                android:drawableLeft="@drawable/ieee"
+                android:drawableLeft="@drawable/itu"
                 android:text="Próximamente..."
                 android:textColor="@color/black"
                 app:backgroundTint="#FFDAD9D9" />
