@@ -24,8 +24,6 @@ public class NormativasFragment extends Fragment {
         binding = FragmentNormativasBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNormativas;
-        normativasViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
