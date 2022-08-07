@@ -26,6 +26,7 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
+                android:onClick="ieee802_3"
                 android:background="@drawable/boton_normativa"
                 android:drawableLeft="@drawable/ieee"
                 android:text="Estándar\n\nIEEE 802.3\n\nEspecificaciones de\ncapa física y red"
