@@ -60,8 +60,7 @@
                 android:id="@+id/textOutputPing"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:lines="20"
-                android:text="TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTex" />
+                android:lines="20" />
 
         </LinearLayout>
     </ScrollView>
