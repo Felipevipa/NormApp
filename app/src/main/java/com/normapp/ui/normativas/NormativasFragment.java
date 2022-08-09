@@ -31,6 +31,7 @@ public class NormativasFragment extends Fragment {
     Button Norma3;
 
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -55,6 +56,7 @@ public class NormativasFragment extends Fragment {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(R.id.nav_host_fragment_activity_main,ieee802_3.newInstance("",""));
                 transaction.addToBackStack(null);
+                transaction.remove(NormativasFragment.this);
                 transaction.commit();
             }
         });
@@ -67,6 +69,7 @@ public class NormativasFragment extends Fragment {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(R.id.nav_host_fragment_activity_main,ieee802_5.newInstance("",""));
                 transaction.addToBackStack(null);
+                transaction.remove(NormativasFragment.this);
                 transaction.commit();
             }
         });
@@ -79,6 +82,7 @@ public class NormativasFragment extends Fragment {
                 FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(R.id.nav_host_fragment_activity_main,ieee802_11.newInstance("",""));
                 transaction.addToBackStack(null);
+                transaction.remove(NormativasFragment.this);
                 transaction.commit();
             }
         });
