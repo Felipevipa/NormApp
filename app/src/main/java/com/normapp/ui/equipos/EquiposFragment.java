@@ -8,9 +8,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.normapp.R;
 import com.normapp.databinding.FragmentEquiposBinding;
+import com.normapp.ui.normativas.ieee802_3;
 
 public class EquiposFragment extends Fragment {
 
@@ -26,6 +30,10 @@ public class EquiposFragment extends Fragment {
 
         final TextView textView = binding.textEquipos;
         equiposViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
+
+
         return root;
     }
 
