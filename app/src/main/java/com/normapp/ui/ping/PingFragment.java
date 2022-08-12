@@ -1,6 +1,9 @@
 package com.normapp.ui.ping;
 
+import android.app.AlertDialog;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +29,7 @@ public class PingFragment extends Fragment {
 
     private FragmentPingBinding binding;
 
+
     private Runnable separateThread = new Runnable() {
         @Override
         public void run() {
@@ -47,15 +51,18 @@ public class PingFragment extends Fragment {
                 } else {
                     ErrorLabel.setText("Destino no alcanzable");
                 }
-            } catch (IOException e) {
+            }catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("IOException");
                 ErrorLabel.setText("IOException");
+                getActivity().finish(); // AQUI FINALIZA LA ACTIVIDAD CUANDO HAY UN ERROR - OMAR
             } catch (Exception e) {
                 e.printStackTrace();
                 System.out.println("Exception");
                 ErrorLabel.setText("Exception");
+                getActivity().finish(); // AQUI FINALIZA LA ACTIVIDAD CUANDO HAY UN ERROR - OMAR
             }
+
         }
     };
 
@@ -82,6 +89,7 @@ public class PingFragment extends Fragment {
         int returnval = p1.waitFor();
         System.out.println(returnval);
         System.out.println(returnval==0);
+
         return returnval==0;
     }
 
@@ -89,9 +97,11 @@ public class PingFragment extends Fragment {
     private TextView IPLabel;
     private TextView ErrorLabel;
     private EditText IpField;
+    Thread t = new Thread(separateThread);
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         PingViewModel pingViewModel =
                 new ViewModelProvider(this).get(PingViewModel.class);
 
@@ -111,8 +121,9 @@ public class PingFragment extends Fragment {
         pingSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Thread t = new Thread(separateThread);
+
                 t.start();
+
             }
 
 
@@ -127,6 +138,7 @@ public class PingFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+
     }
 
 
