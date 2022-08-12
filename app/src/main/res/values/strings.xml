@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NormApp</string>
+    <string name="app_name"></string>
     <string name="title_normativas">Normativas</string>
     <string name="title_equipos">Equipos</string>
     <string name="title_ping">Ping</string>
