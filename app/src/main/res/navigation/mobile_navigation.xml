@@ -26,5 +26,35 @@
         android:name="com.normapp.ui.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/router2900"
+        android:name="com.normapp.ui.equipos.Router2900"
+        android:label="fragment_router2900"
+        tools:layout="@layout/fragment_router2900" />
+    <fragment
+        android:id="@+id/router3600"
+        android:name="com.normapp.ui.equipos.Router3600"
+        android:label="fragment_router3600"
+        tools:layout="@layout/fragment_router3600" />
+    <fragment
+        android:id="@+id/switch2960"
+        android:name="com.normapp.ui.equipos.Switch2960"
+        android:label="fragment_switch2960"
+        tools:layout="@layout/fragment_switch2960" />
+    <fragment
+        android:id="@+id/switch3650"
+        android:name="com.normapp.ui.equipos.Switch3650"
+        android:label="fragment_switch3650"
+        tools:layout="@layout/fragment_switch3650" />
+    <fragment
+        android:id="@+id/firewall1000"
+        android:name="com.normapp.ui.equipos.Firewall1000"
+        android:label="fragment_firewall1000"
+        tools:layout="@layout/fragment_firewall1000" />
+    <fragment
+        android:id="@+id/firewall4100"
+        android:name="com.normapp.ui.equipos.Firewall4100"
+        android:label="fragment_firewall4100"
+        tools:layout="@layout/fragment_firewall4100" />
 
 </navigation>

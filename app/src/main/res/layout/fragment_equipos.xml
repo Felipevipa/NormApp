@@ -6,17 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".ui.equipos.EquiposFragment">
 
-    <TextView
-        android:id="@+id/text_equipos"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/routericon"
+                android:text="Cisco\n\nRouter\n\n2900"
+                app:backgroundTint="#00003d" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/routericon"
+                android:text="Cisco\n\nRouter\n\n3600"
+                android:textColor="@color/white"
+                app:backgroundTint="#00276c" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/switchicon"
+                android:text="Cisco\n\nSwitch\n\n2960"
+                app:backgroundTint="#014ba0" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/switchicon"
+                android:text="Cisco\n\nSwitch\n\n3650"
+                android:textColor="@color/white"
+                app:backgroundTint="#5b7dcf " />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/firewallicon"
+                android:text="Cisco\n\nFirewall\n\nFirepower 1000"
+                app:backgroundTint="#96b3ff" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:background="@drawable/boton_normativa"
+                android:drawableLeft="@drawable/firewallicon"
+                android:text="Cisco\n\nFirewall\n\nFirepower 4100"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#00003d" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
