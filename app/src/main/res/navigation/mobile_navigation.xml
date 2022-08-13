@@ -26,5 +26,20 @@
         android:name="com.normapp.ui.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/ieee802_3"
+        android:name="com.normapp.ui.normativas.ieee802_3"
+        android:label="fragment_ieee802_3"
+        tools:layout="@layout/fragment_ieee802_3" />
+    <fragment
+        android:id="@+id/ieee802_5"
+        android:name="com.normapp.ui.normativas.ieee802_5"
+        android:label="fragment_ieee802_5"
+        tools:layout="@layout/fragment_ieee802_5" />
+    <fragment
+        android:id="@+id/ieee802_11"
+        android:name="com.normapp.ui.normativas.ieee802_11"
+        android:label="fragment_ieee802_11"
+        tools:layout="@layout/fragment_ieee802_11" />
 
 </navigation>

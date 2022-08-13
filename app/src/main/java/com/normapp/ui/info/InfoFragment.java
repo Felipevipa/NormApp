@@ -9,29 +9,43 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.normapp.Adaptadores.AdapterPreguntas;
+import com.normapp.Entidades.Preguntas;
+import com.normapp.R;
 import com.normapp.databinding.FragmentInfoBinding;
+
+import java.util.ArrayList;
 
 public class InfoFragment extends Fragment {
 
+    AdapterPreguntas adapterPreguntas;
+    RecyclerView recyclerViewPreguntas;
+    ArrayList<Preguntas> listaPreguntas;
+
     private FragmentInfoBinding binding;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        InfoViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(InfoViewModel.class);
-
-        binding = FragmentInfoBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-
-        final TextView textView = binding.textInfo;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+    public void cargarLista() {
+        listaPreguntas.add(new Preguntas( "Hola","Hola",R.drawable.ieee));
+        listaPreguntas.add(new Preguntas( "Hola_2","Hola_3",R.drawable.logo));
+        listaPreguntas.add(new Preguntas( "Hola_3","Hola_4",R.drawable.logo));
+        listaPreguntas.add(new Preguntas( "Hola_3","Hola_5",R.drawable.logo));
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.lista_preguntas,container, false);
+        recyclerViewPreguntas = view.findViewById(R.id.recyclerView);
+        listaPreguntas = new ArrayList<>();
+        cargarLista();
+
+
+        return view;
     }
+    public void mostrarData(){
+        recyclerViewPreguntas.setLayoutManager(new LinearLayoutManager(getContext()));
+        adapterPreguntas = new AdapterPreguntas(getContext(), listaPreguntas);
+        recyclerViewPreguntas.setAdapter(adapterPreguntas);
+    }
+
 }

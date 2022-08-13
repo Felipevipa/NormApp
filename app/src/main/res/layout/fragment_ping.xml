@@ -25,39 +25,42 @@
                 android:layout_height="173dp"
                 android:src="@drawable/ic_wifi_black_24dp" />
 
+            <EditText
+                android:id="@+id/IpField"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Dirección IP"
+                android:inputType="textPersonName" />
+
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/pingSubmitButton"
                 android:layout_width="178dp"
                 android:layout_height="wrap_content"
                 android:text="@string/title_ping" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/IPLabel"
                 android:layout_width="221dp"
                 android:layout_height="43dp"
                 android:gravity="center"
+                android:textColor="#000"
                 android:text="IP 192.169.0.12" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="221dp"
+                android:id="@+id/ErrorLabel"
+                android:layout_width="351dp"
                 android:layout_height="43dp"
                 android:gravity="center"
-                android:text="Time: 85.4ms" />
+                android:text="Sin errores"
+                android:textColor="#000" />
 
             <TextView
-                android:id="@+id/textView7"
-                android:layout_width="221dp"
-                android:layout_height="43dp"
-                android:gravity="center"
-                android:text="7 paquetes enviados" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="221dp"
-                android:layout_height="43dp"
-                android:gravity="center"
-                android:text="7 paquetes recibidos" />
+                android:id="@+id/textOutputPing"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:lines="20" />
 
         </LinearLayout>
     </ScrollView>

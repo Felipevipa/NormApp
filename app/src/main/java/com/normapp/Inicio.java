@@ -14,8 +14,14 @@ public class Inicio extends AppCompatActivity {
         setContentView(R.layout.activity_inicio);
     }
 
-    public void navigate(View view) {
+    public void navigate(View a) {
+        String Estado=a.getTag().toString();
         Intent intent = new Intent(this, MainActivity.class);
+        Bundle b = new Bundle();
+        b.putInt("key", Integer.parseInt(Estado)); //Your id
+        intent.putExtras(b); //Put your id to your next Intent
         startActivity(intent);
+        finish();
+
     }
 }
