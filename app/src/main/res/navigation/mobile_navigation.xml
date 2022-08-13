@@ -27,7 +27,6 @@
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
     <fragment
-<<<<<<< HEAD
         android:id="@+id/ieee802_3"
         android:name="com.normapp.ui.normativas.ieee802_3"
         android:label="fragment_ieee802_3"
@@ -42,7 +41,6 @@
         android:name="com.normapp.ui.normativas.ieee802_11"
         android:label="fragment_ieee802_11"
         tools:layout="@layout/fragment_ieee802_11" />
-=======
         android:id="@+id/router2900"
         android:name="com.normapp.ui.equipos.Router2900"
         android:label="fragment_router2900"
@@ -72,6 +70,5 @@
         android:name="com.normapp.ui.equipos.Firewall4100"
         android:label="fragment_firewall4100"
         tools:layout="@layout/fragment_firewall4100" />
->>>>>>> ping
 
 </navigation>

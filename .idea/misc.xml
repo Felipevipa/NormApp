@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/activity_inicio.xml" value="0.1" />
+        <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/activity_main.xml" value="0.12545289855072464" />
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/fragment_equipos.xml" value="0.17391304347826086" />
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/fragment_firewall1000.xml" value="0.17391304347826086" />
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/fragment_firewall4100.xml" value="0.17391304347826086" />
@@ -17,6 +19,7 @@
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/fragment_switch2960.xml" value="0.17391304347826086" />
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/fragment_switch3650.xml" value="0.17391304347826086" />
         <entry key="..\:/Proyectos/NormApp/app/src/main/res/layout/lista_preguntas.xml" value="0.13272543059777103" />
+        <entry key="..\:/Proyectos/NormApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16927083333333334" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/drawable/ic_book_black_24dp.xml" value="0.329" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.329" />
         <entry key="..\:/U/AppsParaTeleco/NormApp/app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.317" />
