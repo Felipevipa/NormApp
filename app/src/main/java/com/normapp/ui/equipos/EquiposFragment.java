@@ -5,6 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,11 +18,26 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.normapp.R;
 import com.normapp.databinding.FragmentEquiposBinding;
+<<<<<<< HEAD
 import com.normapp.ui.normativas.ieee802_3;
+=======
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.normapp.MainActivity;
+import com.normapp.R;
+import com.normapp.ui.equipos.EquiposFragment;
+
+import java.util.List;
+>>>>>>> ping
 
 public class EquiposFragment extends Fragment {
 
     private FragmentEquiposBinding binding;
+    Button Equipo1;
+    Button Equipo2;
+    Button Equipo3;
+    Button Equipo4;
+    Button Equipo5;
+    Button Equipo6;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -28,11 +47,92 @@ public class EquiposFragment extends Fragment {
         binding = FragmentEquiposBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+<<<<<<< HEAD
         final TextView textView = binding.textEquipos;
         equiposViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
 
 
+=======
+        Equipo1 = root.findViewById(R.id.button2);
+        Equipo2 = root.findViewById(R.id.button3);
+        Equipo3 = root.findViewById(R.id.button4);
+        Equipo4 = root.findViewById(R.id.button8);
+        Equipo5 = root.findViewById(R.id.button9);
+        Equipo6 = root.findViewById(R.id.button10);
+
+        Equipo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Router2900.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+
+        Equipo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Router3600.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+
+        Equipo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Switch2960.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+
+        Equipo4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Switch3650.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+
+        Equipo5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Firewall1000.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+
+        Equipo6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.add(R.id.nav_host_fragment_activity_main,Firewall4100.newInstance("",""));
+                transaction.addToBackStack(null);
+                transaction.remove(EquiposFragment.this);
+                transaction.commit();
+            }
+        });
+>>>>>>> ping
 
         return root;
     }
