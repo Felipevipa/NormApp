@@ -90,8 +90,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_2"
                     android:layout_toRightOf="@id/imagen_preguntas_2"
-                    android:text="Descripción descriptiva"
-                    android:textStyle="bold"></TextView>
+                    android:text="Servidores, Switches, Centros de datos, telefonía IP, enlaces inalámbricos, cableado estructurado, sistemas de alimentación initerrumpidos (UPS)."
+                    android:textSize="12sp"></TextView>
 
             </RelativeLayout>
             <RelativeLayout
@@ -111,11 +111,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_3"
                     android:layout_toRightOf="@id/imagen_preguntas_3"
-                    android:text="Pregunta preguntona"
+                    android:text="¿Cómo se identifica un dispositivo conectado a la red?"
                     android:textSize="15sp"
-                    android:layout_marginBottom="9dp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -127,8 +127,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_3"
                     android:layout_toRightOf="@id/imagen_preguntas_3"
-                    android:text="Descripción descriptiva"
-                    android:textStyle="bold"></TextView>
+                    android:text="La dirección IP, es el identificador que lleva consigo cada dispositivo que se conecta a Internet, sea el dispositivo que sea, en el momento en el que está conectado."
+                    android:textSize="12sp"></TextView>
 
             </RelativeLayout>
             <RelativeLayout
@@ -148,10 +148,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_4"
                     android:layout_toRightOf="@id/imagen_preguntas_4"
                     android:text="Pregunta preguntona"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -164,7 +165,7 @@
                     android:layout_toEndOf="@id/imagen_preguntas_4"
                     android:layout_toRightOf="@id/imagen_preguntas_4"
                     android:text="Descripción descriptiva"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="12sp"></TextView>
 
             </RelativeLayout>
             <RelativeLayout
@@ -187,7 +188,8 @@
                     android:layout_toEndOf="@id/imagen_preguntas_5"
                     android:layout_toRightOf="@id/imagen_preguntas_5"
                     android:text="Pregunta preguntona"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -200,7 +202,7 @@
                     android:layout_toEndOf="@id/imagen_preguntas_5"
                     android:layout_toRightOf="@id/imagen_preguntas_5"
                     android:text="Descripción descriptiva"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="12sp"></TextView>
 
             </RelativeLayout>
             <RelativeLayout
@@ -223,8 +225,14 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_6"
                     android:layout_toRightOf="@id/imagen_preguntas_6"
+<<<<<<< HEAD
                     android:text="¿Quién me dice cómo puedo hacer una tarea específica? "
                     android:textSize="15sp"
+=======
+                    android:text="Pregunta preguntona"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+>>>>>>> 89dcd6c (Preguntas preguntonas)
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -236,9 +244,14 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_6"
                     android:layout_toRightOf="@id/imagen_preguntas_6"
+<<<<<<< HEAD
                     android:text="Múltiples organismos de estandarización te pueden ayudar. Dirígete a la pestaña de normativas para más información."
                     android:textSize="12sp"
                     android:textStyle="bold"></TextView>
+=======
+                    android:text="Descripción descriptiva"
+                    android:textSize="12sp"></TextView>
+>>>>>>> 89dcd6c (Preguntas preguntonas)
 
             </RelativeLayout>
             <RelativeLayout
@@ -261,8 +274,14 @@
                     android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_7"
                     android:layout_toRightOf="@id/imagen_preguntas_7"
+<<<<<<< HEAD
                     android:text="¿Dónde puedo encontrar información acerca de los equipos de mi empresa?"
                     android:textSize="15sp"
+=======
+                    android:text="Pregunta preguntona"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+>>>>>>> 89dcd6c (Preguntas preguntonas)
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -275,9 +294,14 @@
 
                     android:layout_toEndOf="@id/imagen_preguntas_7"
                     android:layout_toRightOf="@id/imagen_preguntas_7"
+<<<<<<< HEAD
                     android:textSize="12sp"
                     android:text="Dirígete a la pestaña de equipos y busca la referencia que desees, si no la encuentras puedes buscar más información por internet. "
                     android:textStyle="bold"></TextView>
+=======
+                    android:text="Descripción descriptiva"
+                    android:textSize="12sp"></TextView>
+>>>>>>> 89dcd6c (Preguntas preguntonas)
 
             </RelativeLayout>
             <RelativeLayout
@@ -300,8 +324,14 @@
                     android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_8"
                     android:layout_toRightOf="@id/imagen_preguntas_8"
+<<<<<<< HEAD
                     android:text="¿Cómo descargar una aplicación móvil?"
                     android:textSize="15sp"
+=======
+                    android:text="Pregunta preguntona"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+>>>>>>> 89dcd6c (Preguntas preguntonas)
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -313,8 +343,13 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_8"
                     android:layout_toRightOf="@id/imagen_preguntas_8"
+<<<<<<< HEAD
                     android:textSize="12sp"
                     android:text="No lo sé, ¿Cómo descargaste esta en primer lugar?"></TextView>
+=======
+                    android:text="Descripción descriptiva"
+                    android:textSize="12sp"></TextView>
+>>>>>>> 89dcd6c (Preguntas preguntonas)
 
             </RelativeLayout>
         </LinearLayout>
