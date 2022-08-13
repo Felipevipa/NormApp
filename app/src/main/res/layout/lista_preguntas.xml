@@ -219,11 +219,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
+                    android:layout_marginBottom="9dp"
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_6"
                     android:layout_toRightOf="@id/imagen_preguntas_6"
-                    android:text="Pregunta preguntona"
-                    android:textSize="20sp"
+                    android:text="¿Quién me dice cómo puedo hacer una tarea específica? "
+                    android:textSize="15sp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -235,7 +236,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_6"
                     android:layout_toRightOf="@id/imagen_preguntas_6"
-                    android:text="Descripción descriptiva"
+                    android:text="Múltiples organismos de estandarización te pueden ayudar. Dirígete a la pestaña de normativas para más información."
+                    android:textSize="12sp"
                     android:textStyle="bold"></TextView>
 
             </RelativeLayout>
@@ -256,10 +258,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_7"
                     android:layout_toRightOf="@id/imagen_preguntas_7"
-                    android:text="Pregunta preguntona"
-                    android:textSize="20sp"
+                    android:text="¿Dónde puedo encontrar información acerca de los equipos de mi empresa?"
+                    android:textSize="15sp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -269,9 +272,11 @@
                     android:layout_below="@id/titulo_preguntas_7"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+
                     android:layout_toEndOf="@id/imagen_preguntas_7"
                     android:layout_toRightOf="@id/imagen_preguntas_7"
-                    android:text="Descripción descriptiva"
+                    android:textSize="12sp"
+                    android:text="Dirígete a la pestaña de equipos y busca la referencia que desees, si no la encuentras puedes buscar más información por internet. "
                     android:textStyle="bold"></TextView>
 
             </RelativeLayout>
@@ -292,10 +297,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="9dp"
                     android:layout_toEndOf="@id/imagen_preguntas_8"
                     android:layout_toRightOf="@id/imagen_preguntas_8"
-                    android:text="Pregunta preguntona"
-                    android:textSize="20sp"
+                    android:text="¿Cómo descargar una aplicación móvil?"
+                    android:textSize="15sp"
                     android:textStyle="bold"></TextView>
 
                 <TextView
@@ -307,8 +313,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_toEndOf="@id/imagen_preguntas_8"
                     android:layout_toRightOf="@id/imagen_preguntas_8"
-                    android:text="Descripción descriptiva"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="12sp"
+                    android:text="No lo sé, ¿Cómo descargaste esta en primer lugar?"></TextView>
 
             </RelativeLayout>
         </LinearLayout>
