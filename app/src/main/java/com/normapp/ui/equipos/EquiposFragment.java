@@ -16,18 +16,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.normapp.R;
 import com.normapp.databinding.FragmentEquiposBinding;
-<<<<<<< HEAD
-import com.normapp.ui.normativas.ieee802_3;
-=======
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.normapp.MainActivity;
 import com.normapp.R;
 import com.normapp.ui.equipos.EquiposFragment;
 
 import java.util.List;
->>>>>>> ping
 
 public class EquiposFragment extends Fragment {
 
@@ -47,13 +42,6 @@ public class EquiposFragment extends Fragment {
         binding = FragmentEquiposBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-<<<<<<< HEAD
-        final TextView textView = binding.textEquipos;
-        equiposViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-
-
-
-=======
         Equipo1 = root.findViewById(R.id.button2);
         Equipo2 = root.findViewById(R.id.button3);
         Equipo3 = root.findViewById(R.id.button4);
@@ -132,7 +120,6 @@ public class EquiposFragment extends Fragment {
                 transaction.commit();
             }
         });
->>>>>>> ping
 
         return root;
     }
