@@ -4,47 +4,315 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:id="@+id/carta_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:cardCornerRadius="3dp"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        >
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imagen_persona"
-            android:layout_width="102dp"
-            android:layout_height="100dp"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/titulo_persona"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_toEndOf="@id/imagen_persona"
-            android:layout_toRightOf="@id/imagen_persona"
-            android:text="Pregunta preguntona"
-            android:textSize="20sp"
-            android:textStyle="bold"></TextView>
+            android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/titulo_persona"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_toEndOf="@id/imagen_persona"
-            android:text="Descripción descriptiva"
-            android:textStyle="bold"></TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
 
-    </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imagen_preguntas"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas"
+                    android:layout_toRightOf="@id/imagen_preguntas"
+                    android:text="¿Cuál es el objetivo para instalar Telecomunicaciones en tu empresa?"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas"
+                    android:layout_toRightOf="@id/imagen_preguntas"
+                    android:text="Facilitar la movilidad de la información.\nAumentar la velocidad de procesos, la toma de decisiones y la seguridad de los datos."
+                    android:textSize="12sp"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_2"
+                    android:layout_toRightOf="@id/imagen_preguntas_2"
+                    android:text="¿Cuáles son las soluciones disponibles en Telecomunicaciones en tu empresa?"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_2"
+                    android:layout_toRightOf="@id/imagen_preguntas_2"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_3"
+                    android:layout_toRightOf="@id/imagen_preguntas_3"
+                    android:text="Pregunta preguntona"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="9dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_3"
+                    android:layout_toRightOf="@id/imagen_preguntas_3"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_4"
+                    android:layout_toRightOf="@id/imagen_preguntas_4"
+                    android:text="Pregunta preguntona"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_4"
+                    android:layout_toRightOf="@id/imagen_preguntas_4"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_5"
+                    android:layout_toRightOf="@id/imagen_preguntas_5"
+                    android:text="Pregunta preguntona"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_5"
+                    android:layout_toRightOf="@id/imagen_preguntas_5"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_6"
+                    android:layout_toRightOf="@id/imagen_preguntas_6"
+                    android:text="Pregunta preguntona"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_6"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_6"
+                    android:layout_toRightOf="@id/imagen_preguntas_6"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_7"
+                    android:layout_toRightOf="@id/imagen_preguntas_7"
+                    android:text="Pregunta preguntona"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_7"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_7"
+                    android:layout_toRightOf="@id/imagen_preguntas_7"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagen_preguntas_8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_preguntas_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_8"
+                    android:layout_toRightOf="@id/imagen_preguntas_8"
+                    android:text="Pregunta preguntona"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/descripcion_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titulo_preguntas_8"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/imagen_preguntas_8"
+                    android:layout_toRightOf="@id/imagen_preguntas_8"
+                    android:text="Descripción descriptiva"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.cardview.widget.CardView>
 

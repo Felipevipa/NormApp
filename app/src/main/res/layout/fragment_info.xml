@@ -6,52 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.info.InfoFragment">
 
-    <androidx.cardview.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:cardCornerRadius="3dp"
-        app:cardElevation="3dp"
-        app:cardUseCompatPadding="true">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            >
-
-            <ImageView
-                android:id="@+id/imagen_persona"
-                android:layout_width="102dp"
-                android:layout_height="100dp"
-                android:src="@drawable/logo" />
-
-            <TextView
-                android:id="@+id/titulo_persona"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toEndOf="@id/imagen_persona"
-                android:layout_toRightOf="@id/imagen_persona"
-                android:text="Pregunta preguntona"
-                android:textSize="20sp"
-                android:textStyle="bold"></TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/titulo_persona"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_toEndOf="@id/imagen_persona"
-                android:text="Descripción descriptiva"
-                android:textStyle="bold"></TextView>
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
-
+        android:layout_height="500dp" />
 </LinearLayout>
